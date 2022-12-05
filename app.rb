@@ -8,6 +8,13 @@ configure :development do
   BetterErrors.application_root = File.expand_path(__dir__)
 end
 
+Choices = {
+  'HAM' => 'Hamburger',
+  'PIZ' => 'Pizza',
+  'CUR' => 'Curry',
+  'NOO' => 'Noodles',
+}
+
 get "/" do
   erb :index
 end
